@@ -9,5 +9,5 @@ jobs:
     if: github.ref_name == 'main' || contains(github.event.head_commit.message, '[deploy-zap]')
     steps:
       - name: zapier app 
-        run: echo hoge
+        run: echo test
         
