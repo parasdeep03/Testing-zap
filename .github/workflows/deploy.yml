@@ -8,10 +8,6 @@ jobs:
   build:
     runs-on: "ubuntu-22.04"
     steps:
-      - name: zapier app 
       - uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: 120
-      - run: |
-            ${{ steps.setup-chrome.outputs.chrome-path }} --version
+      - run: chrome --version
         
